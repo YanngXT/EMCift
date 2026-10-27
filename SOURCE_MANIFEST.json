@@ -1,0 +1,252 @@
+{
+  "generated_at": "2026-10-27T09:23:52.476297+08:00",
+  "scope": "EMCift main-table implementation plus iWildCam and PACS datasets",
+  "files": [
+    {
+      "path": "models/__init__.py",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "path": "convs/__init__.py",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "path": "my_utils/__init__.py",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "path": "my_dataset_utils/__init__.py",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "path": "tools/__init__.py",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "path": "tests/__init__.py",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "path": "models/emcift.py",
+      "sha256": "d460c844a9631afa2108a594873e3a4301ea2ef1dacc679d7b5e7b9fd8781a92",
+      "source_sha256": "987031f1f492f3812a3b25d7b774b013bf928ef8c4bca394c0d992e2a000ff54",
+      "change": "Remove server-only import path; learning/evaluation methods unchanged."
+    },
+    {
+      "path": "models/base.py",
+      "sha256": "a89ae230087653c77d1a232ef2828e87f3954e63a5ae4c743e370a5b27ae0fa7",
+      "source_sha256": "a396e45ba2f402ba80ff9e88f18e41793dc0b7e1a413a5fc46c683ea5a4d3e18",
+      "change": "Remove server-only import path; learning/evaluation methods unchanged."
+    },
+    {
+      "path": "my_utils/data_manager.py",
+      "sha256": "9b5c576acb721038a18000175e7ead365e693003ec1fbd675a0bfee4655c3f88",
+      "source_sha256": "465c6599754f6cd59fdda5ab711c708edbb2131332a93a36d189821618b311d5",
+      "change": "Remove server-only import path; learning/evaluation methods unchanged."
+    },
+    {
+      "path": "my_utils/toolkit.py",
+      "sha256": "df5a2a0c3d209dbd86831e9d853202069f084cf8f2e744a321a2419296c560b0",
+      "source_sha256": "8113d9e70487d05ee4e04c54064ddd22d7e4cd2f4b3ef88b03b86f37153a7c52",
+      "change": "Remove server-only import path; learning/evaluation methods unchanged."
+    },
+    {
+      "path": "my_utils/inc_net.py",
+      "sha256": "4dd222726316390427ae6c50848ad194e80369674d20eae2b0743200fd92a91b",
+      "source_sha256": "d54c9f40ed1a765175573589a7cd5c15ab10fb59c9dbab9846b3713fd56c04a1",
+      "change": "Keep exact network classes used by EMCift; expose only the main pretrained ViT and its frozen reference."
+    },
+    {
+      "path": "my_utils/factory.py",
+      "sha256": "020f6f47ebeaa16797cfd8de6a0beebbc1ae50a4edb712bc47bf555a23774a90"
+    },
+    {
+      "path": "convs/linears.py",
+      "sha256": "602d45666cc1dc625f70006943b3c941802a4845f7498301cafa2399b5debeb9",
+      "source_sha256": "7e4361541a49cab8a674fea1a9617f2fe52dff2d5207c175fc174e1890a21504",
+      "change": "Keep only the shared classifier utilities required by EMCift."
+    },
+    {
+      "path": "models/distribution_module.py",
+      "sha256": "81e01f6abd8a1a75444563e1219e8ed56d2ada96702ac55a933305d0bbe81682",
+      "source_sha256": "d2a0befd426519b30fa123fa1e33940345efb3f82e07d583551c0cd33774c32e",
+      "change": "Keep gradient reversal only."
+    },
+    {
+      "path": "convs/vision_transformer_adapter.py",
+      "sha256": "d2a7b98278931ab47b1be5426fcf44d4c3b614e8150e0eb811e3b2f4d84232ac",
+      "source_sha256": "311b93403783fa70e4926e42f09b2cc0691cf892df2130ebb6badd1035c84cfe",
+      "change": "Remove forced network mirror and ImageNet-1K constructor; preserve all selected class/constructor bodies."
+    },
+    {
+      "path": "my_dataset_utils/my_data_utils.py",
+      "sha256": "a10f00092d67c2a948788dd888b517661bbc4079dbd943d814a2ab1867fc9410",
+      "source_sha256": "d1a491c9864cf72d1a634b7e0e9384088eaf61222f872b4bcdb489a127fa2a79",
+      "change": "Keep exact IDX readers and original copyright notice, omit unused downloader utilities."
+    },
+    {
+      "path": "my_dataset_utils/continual_datasets.py",
+      "sha256": "c919621dd8dd75964a15a6a0182b959e5b7ea3d62521beae5c6e3a52bb0ae759",
+      "source_sha256": "6523611744328c26ab0a118dbea4568ebc4f7542e931663d86c3d17b5e514058",
+      "change": "Keep main datasets; accept existing prepared directories without redownloading archives; correct directory existence check; no split-method changes."
+    },
+    {
+      "path": "my_dataset_utils/my_datasets.py",
+      "sha256": "4e853baa5d193271f52e8be868826edb4dae47d6a31861ed5aaa32c7ba476a03",
+      "source_sha256": "69eb8acaa19f8b23629cc3a1aa24a5bc52e4eb9cfeffc3deb84b4bbcb1be9f4c",
+      "change": "Keep PACS; make protocol path explicit and downloads opt-in; preserve benchmark fragmentation algorithm."
+    },
+    {
+      "path": "my_dataset_utils/iwildcam.py",
+      "sha256": "fc9b80ff311144240bc5c6df5f1d9621a9653dabcd259d7960dc0f01c0cf91ec",
+      "source_sha256": "9159bffc83f8d7222237e10c1b585d3f99dad337178dfe7dd25ca0baaf8100ab",
+      "change": "Portable manifest/image roots only; retain the reported stream loader, transforms and example order."
+    },
+    {
+      "path": "protocols/iwildcam/manifest.json",
+      "sha256": "a6bbad3efa3396e686575a33dc77c6ecd223f7803d9303f0e9c724ecdc4ef13b"
+    },
+    {
+      "path": "tools/iwildcam_download.py",
+      "sha256": "4636c60fd4d9326d13f6b55fd6f929928670210f4c39f516bae39283f3c42db3",
+      "source_sha256": "af33f5708b9364c36cba6d36b933bb8d59ef79a8f3c7def41383f6a7075f2c89",
+      "change": "Retain partial ZIP helpers; require HTTP206 with the exact range and cap reads; do not resample the stream."
+    },
+    {
+      "path": "trainer.py",
+      "sha256": "ab56edfd1fffab4b4e1bd8b86a3f3fdc1477b17b81ffc20ce31e2eabacddc428",
+      "source_sha256": "e4e5a62907385a206bf12f2118ecea4964113f172ddea85b8f0d77d622b39d37",
+      "change": "CDIL entry only; reset logging handlers between seeds. Training loop and reported metrics unchanged."
+    },
+    {
+      "path": "configs/iDigits.json",
+      "sha256": "bf3f06e9a13508be390af9ea0a598310c883e49463a16d7f11dbbec9a41f4d7f",
+      "source_sha256": "4cc85de174f92e77d5685a74d4d13aec7750490ea2b180f906fb56e3206909e0",
+      "change": "Portable paths and EMCift naming; default seed42; visualization/checkpoint export disabled without changing training."
+    },
+    {
+      "path": "protocols/iDigits.yaml",
+      "sha256": "40373ddeb6b0138c7644b48594405e76ebd90fbe457c82edc66056353c732c74"
+    },
+    {
+      "path": "configs/DomainNet.json",
+      "sha256": "138434af0b33493c9748124505822fb671d735ff15d29a4f2c4937f66778bd91",
+      "source_sha256": "cc1664d3247a8a433f8b9bd6cefae46c83b62627e5e4f673ec744c508b43e8fc",
+      "change": "Portable paths and EMCift naming; default seed42; visualization/checkpoint export disabled without changing training."
+    },
+    {
+      "path": "protocols/DomainNet.yaml",
+      "sha256": "92c513086e8e0e68b38d705002f61e4ea9bb10eb996a0bbb950763c63eed3177"
+    },
+    {
+      "path": "configs/CORe50.json",
+      "sha256": "e31f0fd6c6059323329d0d78f1fd1b2b6a1b880743e46398e6e27c4fc0896aa7",
+      "source_sha256": "4b49b34dc67a9b36f1155a81436862d354b238a0439ca29b9836d861c8843967",
+      "change": "Portable paths and EMCift naming; default seed42; visualization/checkpoint export disabled without changing training."
+    },
+    {
+      "path": "protocols/CORe50.yaml",
+      "sha256": "1ffcc1f24da677601d7367b20a9091bcf1800e49682b950e63d730c5a78cda32"
+    },
+    {
+      "path": "experiments/supplemental/PACS.json",
+      "sha256": "aafeefff3ea9fc0b567e357eac8bf29df9c46df1700caf93a7f084a8bce0d300",
+      "source_sha256": "969b62f302af5c071f163f9cf4d4ec184a17f8468cebc2fb55d2bb893f81d4c3",
+      "change": "Portable paths and EMCift naming; default seed42; visualization/checkpoint export disabled without changing training."
+    },
+    {
+      "path": "protocols/PACS.yaml",
+      "sha256": "4fddf0ce15dc36fda6475bfb40a5d176172c79a78af71cb47ed393e8c54bde9f"
+    },
+    {
+      "path": "experiments/supplemental/iWildCamTinyPlus.json",
+      "sha256": "167050071b201e1e4714425d8f17a6f5c041b634a832d711829cd567b5e619b6",
+      "source_sha256": "9b648c93d7be63483db62451640549b6189d602202f2c28024a3cc5e214ba014",
+      "change": "Portable paths and EMCift naming; default seed42; visualization/checkpoint export disabled without changing training."
+    },
+    {
+      "path": "CONFIG_ORIGINS.json",
+      "sha256": "bcc2da9bb8ebbe61e43ff8c326afb1f779639b0ea56bf19869a6506c33e9b4a9"
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "b50ea3e91c33f023d8bc7e05bcfd2a264f377d07e619c14946be0b045966de16"
+    },
+    {
+      "path": "README.md",
+      "sha256": "d7367dc9618c5850111ba1a02e517d4c4f1442ed1f8b60d61b39aebfd21419b3"
+    },
+    {
+      "path": "THIRD_PARTY.md",
+      "sha256": "8650f0c6f0b33be3b575efceccbe13d9a41df47311937fb0e6ee7f548d6e8700"
+    },
+    {
+      "path": "docs/DATASETS.md",
+      "sha256": "2fac08dfd42ad8d2538cb039b4b6d142c9c4654cfb18e00f0ac588e7188501ea"
+    },
+    {
+      "path": "docs/IMPLEMENTATION.md",
+      "sha256": "61238dd5246883859821cf1cafcf248b87864feea9d10bd61f08cad346df08e9"
+    },
+    {
+      "path": "docs/SUPPLEMENTAL.md",
+      "sha256": "a7d33bd6a69f66df76678151eff932488e71a16025c2a230dbf1843f8109c15e"
+    },
+    {
+      "path": "environment.yml",
+      "sha256": "1b36920c699fb002707b43a1ae5efc1d738870d72d6c3dfb043b3751f045592c"
+    },
+    {
+      "path": "main.py",
+      "sha256": "e3b131f74a4dab196537e42db63a5469ba8c2a8ef229f95c44f750422c90e382"
+    },
+    {
+      "path": "requirements.txt",
+      "sha256": "947ca95176ee6aa4090c0d661190717ea1a9770923db1ff9f1626d559abc1b95"
+    },
+    {
+      "path": "scripts/run.sh",
+      "sha256": "5ea655ff9971ff9d0b36c6d413be95afd7da6c7a8fe9e0fee24287781b2d66ba"
+    },
+    {
+      "path": "tests/test_release.py",
+      "sha256": "496618874a968e2765bd52b82abc688f768b8e5035708ef21ce92b3c501ee71e"
+    },
+    {
+      "path": "tools/check_data.py",
+      "sha256": "c556d774a00d120e1c2e9136cbf5709c41943cac30e16389c2cc4fe70b9eed5b"
+    },
+    {
+      "path": "tools/prepare_iwildcam.py",
+      "sha256": "1984a49422c5134226d9a7014b72e1f7580cdcb5f97f880dce61159399813d89"
+    },
+    {
+      "path": "tools/read_results.py",
+      "sha256": "1096b343c8883e2032aec1214b5e982a7c84fbdf6282be4463b08fa017b1e87b"
+    },
+    {
+      "path": "third_party/licenses/DeiT-LICENSE.txt",
+      "sha256": "b208c52b00a2df2c8f4c3298c34407bf2bfe409968213372251c91fcc737a1a5"
+    },
+    {
+      "path": "third_party/licenses/MAE-LICENSE.txt",
+      "sha256": "ffe3b1e0b58c1f1250ce48f84d8c37328f9a1ff59bb77b63bc97480cf2778b64"
+    },
+    {
+      "path": "third_party/licenses/PyCIL-LICENSE.txt",
+      "sha256": "0b349ecc68e75ab59493b80ff2308dc9fe144e6fcbb789ff62de427c4cea6920"
+    },
+    {
+      "path": "third_party/licenses/timm-LICENSE.txt",
+      "sha256": "71b111620fa32c17a80ccd6db2da759d31a591e497d8b5f382174f59d1b59d49"
+    },
+    {
+      "path": "third_party/licenses/torchvision-LICENSE.txt",
+      "sha256": "6502f676851cfe25f8af75531dfb32375b7325b73c37e7b43741fa422893e71d"
+    },
+    {
+      "path": "third_party/licenses/unify-PET-LICENSE.txt",
+      "sha256": "77fd4710def9ec3c0f6225800e0235f15a425abd4a8b03559127fcd782612049"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+holdout_labels:
+  - []
+  - []
+  - []
+  - []
+  - []
+  - []
+min_class_num: 10
+max_class_num: 15

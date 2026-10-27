@@ -1,0 +1,116 @@
+[
+  {
+    "config": "configs/iDigits.json",
+    "source_sha256": "4cc85de174f92e77d5685a74d4d13aec7750490ea2b180f906fb56e3206909e0",
+    "original_seed_list": [
+      1004,
+      1108,
+      0,
+      1,
+      2,
+      3,
+      10,
+      12,
+      45
+    ],
+    "changed_fields": [
+      "data_path",
+      "protocol_path",
+      "seed",
+      "device",
+      "mode",
+      "plot",
+      "save_checkpoint",
+      "model_name",
+      "model_prefix",
+      "dataset"
+    ]
+  },
+  {
+    "config": "configs/DomainNet.json",
+    "source_sha256": "cc1664d3247a8a433f8b9bd6cefae46c83b62627e5e4f673ec744c508b43e8fc",
+    "original_seed_list": [
+      1004,
+      1108,
+      0,
+      1,
+      2,
+      3,
+      10,
+      12,
+      45
+    ],
+    "changed_fields": [
+      "data_path",
+      "protocol_path",
+      "seed",
+      "device",
+      "mode",
+      "plot",
+      "save_checkpoint",
+      "model_name",
+      "model_prefix",
+      "dataset"
+    ]
+  },
+  {
+    "config": "configs/CORe50.json",
+    "source_sha256": "4b49b34dc67a9b36f1155a81436862d354b238a0439ca29b9836d861c8843967",
+    "original_seed_list": [
+      1004,
+      1108
+    ],
+    "changed_fields": [
+      "data_path",
+      "protocol_path",
+      "seed",
+      "device",
+      "mode",
+      "plot",
+      "save_checkpoint",
+      "model_name",
+      "model_prefix",
+      "dataset"
+    ]
+  },
+  {
+    "config": "experiments/supplemental/PACS.json",
+    "source_sha256": "969b62f302af5c071f163f9cf4d4ec184a17f8468cebc2fb55d2bb893f81d4c3",
+    "original_seed_list": [
+      1004,
+      1108,
+      42
+    ],
+    "changed_fields": [
+      "data_path",
+      "protocol_path",
+      "seed",
+      "device",
+      "mode",
+      "plot",
+      "save_checkpoint",
+      "model_name",
+      "model_prefix",
+      "dataset"
+    ]
+  },
+  {
+    "config": "experiments/supplemental/iWildCamTinyPlus.json",
+    "source_sha256": "9b648c93d7be63483db62451640549b6189d602202f2c28024a3cc5e214ba014",
+    "original_seed_list": [
+      42
+    ],
+    "changed_fields": [
+      "data_path",
+      "protocol_path",
+      "seed",
+      "device",
+      "mode",
+      "plot",
+      "save_checkpoint",
+      "model_name",
+      "model_prefix",
+      "dataset"
+    ]
+  }
+]
